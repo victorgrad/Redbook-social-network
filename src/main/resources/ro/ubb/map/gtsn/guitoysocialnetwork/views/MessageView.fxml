@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@CssStylesheets/Window.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubb.map.gtsn.guitoysocialnetwork.controllers.MessageController">
+   <children>
+      <Button layoutX="1.0" mnemonicParsing="false" onAction="#onBackButtonClicked" text="&lt;- Back" />
+      <ListView fx:id="messageListView" layoutX="1.0" layoutY="35.0" prefHeight="280.0" prefWidth="519.0" stylesheets="@CssStylesheets/List.css" />
+      <TextArea fx:id="textArea" layoutX="1.0" layoutY="355.0" prefHeight="67.0" prefWidth="432.0" />
+      <Button fx:id="replyAllButton" layoutX="442.0" layoutY="355.0" mnemonicParsing="false" onAction="#onReplyAllButtonClicked" prefHeight="67.0" prefWidth="64.0" text="Reply">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <HBox layoutX="121.0" layoutY="323.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onPrevPageButtonClick" text="&lt;--" />
+            <Label fx:id="pageLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="175.0" />
+            <Button mnemonicParsing="false" onAction="#onNextPageButtonClick" text="--&gt;" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

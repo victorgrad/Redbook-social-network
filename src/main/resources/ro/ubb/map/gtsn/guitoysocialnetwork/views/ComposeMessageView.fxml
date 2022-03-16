@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="650.0" stylesheets="@CssStylesheets/Window.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubb.map.gtsn.guitoysocialnetwork.controllers.ComposeMessageController">
+   <children>
+      <Label layoutX="30.0" layoutY="54.0" text="New Message">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" layoutX="30.0" layoutY="84.0" prefHeight="308.0" prefWidth="271.0" />
+      <Label layoutX="359.0" layoutY="54.0" text="Send to:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="addRecipientButton" layoutX="568.0" layoutY="84.0" mnemonicParsing="false" onAction="#onAddRecipientButton" text="Add" />
+      <TableView fx:id="tableView" layoutX="359.0" layoutY="130.0" prefHeight="308.0" prefWidth="250.0" stylesheets="@CssStylesheets/Table.css">
+        <columns>
+          <TableColumn fx:id="firstnames" prefWidth="100.0" resizable="false" text="Firstname" />
+          <TableColumn fx:id="lastnames" prefWidth="100.0" resizable="false" text="Lastname" />
+            <TableColumn fx:id="colButtons" prefWidth="50.0" resizable="false" />
+        </columns>
+      </TableView>
+      <Button fx:id="sendButton" layoutX="30.0" layoutY="413.0" mnemonicParsing="false" onAction="#onSendButtonClicked" prefHeight="25.0" prefWidth="124.0" text="Send" />
+      <Button fx:id="clearButton" layoutX="177.0" layoutY="413.0" mnemonicParsing="false" onAction="#onClearButtonClicked" prefHeight="25.0" prefWidth="124.0" text="Clear" />
+      <Button layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="25.0" prefWidth="84.0" text="&lt;-- Back" />
+      <TextField fx:id="textField" layoutX="358.0" layoutY="84.0" prefHeight="25.0" prefWidth="205.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="625.0" stylesheets="@CssStylesheets/Window.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubb.map.gtsn.guitoysocialnetwork.controllers.RequestController">
+    <children>
+        <TableView fx:id="tableView" prefHeight="300.0" stylesheets="@CssStylesheets/Table.css">
+            <columns>
+                <TableColumn fx:id="usernames" prefWidth="100.0" text="Username" />
+                <TableColumn fx:id="firstNames" prefWidth="100.0" text="First Name" />
+                <TableColumn fx:id="lastNames" prefWidth="100.0" text="Last Name" />
+                <TableColumn fx:id="statuses" prefWidth="100.0" text="Request Status" />
+                <TableColumn fx:id="dates" prefWidth="73.0" text="Date" />
+            <TableColumn fx:id="colButtons" minWidth="110.0" prefWidth="150.0" text="Action" />
+            </columns>
+        </TableView>
+      <HBox layoutX="191.0" layoutY="300.0">
+         <children>
+      
+            <Button fx:id="prevPage" mnemonicParsing="false" onAction="#onPreviousPageButtonClick" text="&lt;--" />
+            <Label fx:id="pageLabel" prefHeight="17.0" prefWidth="175.0" />
+            <Button fx:id="nextPage" mnemonicParsing="false" onAction="#onNextPageButtonClick" text="--&gt;" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+
+    </children>
+</AnchorPane>

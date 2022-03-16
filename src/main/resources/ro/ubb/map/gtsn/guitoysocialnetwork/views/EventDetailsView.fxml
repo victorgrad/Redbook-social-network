@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="637.0" stylesheets="@CssStylesheets/Window.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubb.map.gtsn.guitoysocialnetwork.controllers.EventDetailsController">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutY="51.0" prefHeight="304.0" prefWidth="635.0" wrapText="true" />
+      <Button mnemonicParsing="false" onAction="#onBackButtonClick" text="&lt;- Back" />
+      <Button layoutX="284.0" layoutY="380.0" mnemonicParsing="false" onAction="#onSubscribeButtonClick" text="Subscribe" />
+      <CheckBox fx:id="checkNotification" layoutX="492.0" layoutY="384.0" mnemonicParsing="false" text="Recieve Notification" textFill="WHITE" />
+   </children>
+</AnchorPane>

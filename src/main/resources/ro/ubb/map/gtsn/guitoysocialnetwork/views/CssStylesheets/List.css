@@ -1,0 +1,15 @@
+.list-view{
+    -fx-background-radius: 5;
+    -fx-background-color: linear-gradient(to bottom right,rgba(255,128,110,1),rgba(252,135,157,1));
+}
+
+.list-cell:hover{
+    -fx-border-color: rgba(249,178,72,1);
+}
+.list-cell:odd{
+    -fx-background-color: rgba(255,255,255,0);
+
+}
+.list-cell:even{
+    -fx-background-color: rgba(255,255,255,0.2);
+}
